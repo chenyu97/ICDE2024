@@ -480,4 +480,3 @@ optimal_X = result.x.reshape(N, M)
 
 print("Optimal X:")
 print(optimal_X)
-print("Optimal Objective:")

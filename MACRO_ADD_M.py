@@ -162,7 +162,8 @@ else:
     data = []
     with open('./dataset_ADD_M/Fn_parameter.csv', 'r') as csvfile:
         csvreader = csv.reader(csvfile)
-        for row in csvreader:
+        for row in csvreader:print("Optimal Objective:")
+
             data.append([float(value) for value in row])
     for i in range(N):
         Fn_array[i] = data[i][0]
@@ -480,4 +481,3 @@ optimal_X = result.x.reshape(N, M)
 
 print("Optimal X:")
 print(optimal_X)
-print("Optimal Objective:")
